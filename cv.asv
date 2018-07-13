@@ -1,0 +1,18 @@
+%% Read an image
+img - imread('moon.png')
+imshow(img);
+
+%% Add salt & pepper noise
+noisy_img = imnoise(img, 'salt & pepper', 0.02);
+imshow(noisy_img);
+
+%%Apply a median filter
+median_filtered = medfilt2(noisy
+result = blend(dolphin, bicycle, 0.75);
+imshow(result); % note: will result in an error if blend() returns empty or incorrect value
+
+function output = blend(a, b, alpha)
+% BLEND Blends two images
+
+    output = a * alpha + b * (1-alpha);
+end
